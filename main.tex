@@ -26,21 +26,34 @@ Computer Crime, Computing, Human Error, Malicious, Malware, Ransomware, Users, V
 \section{Introduction}
 \IEEEPARstart{I}{n} the past few years, the amount of news reports on cases of this form of malware has been increasing, showing both the rise of cases, and the sophistication of attacks. The most recent of these includes an article from the BBC \cite{bbc-ransomware}, where a ransomware software known as Maktub emails a user not only a malicious link to the software, but the user's postcode to make it more convincing. With more and more intricate ways of persuading the users to access the malware, it is the up-most importance that user's should know when a link, email or web address is genuine. This paper looks into the opinion that reducing human error could reduce the number of infected machines, and in particular the number of cases of ransomware.
 
-\subsection{Ransomware}
-In order to look closely aIn order to look closely at some of the human errors that are causing the rise of ransomware, the malicious software should be examined, and reasons why this form of software is so effective in current times. \par
-In a paper by A. Kharraz (A look under the hoof of ransomware attacks) \cite{4}, the authors give an insight into how attacks take place, and how a range of different encryption algorithms are used by several of the most common ransomwares. Ransomware belongs to a class of malware identified by the author as ‘scareware’, which takes advantage of a users’ fear of losing their private information or having their data exposed to others. \par
-In addition to the basic introduction of what the author introduces ransomware as, is the startling statistics on this kind of malware. In 2013, the author reported an increase of over 500\% on the amount of attacks compared to 2012. Because of this statistic, the author claims that ransomware is one of the most threatening viruses at the time the paper was published. In conducting research about the inner-workings of ransomware the author uses 1359 real-life reported cases of ransomware attacks in order to get consensus of how attacks are generally performed. \\
+\subsection{Ransomware}In order to look closely at some of the human errors that are causing the rise of ransomware, the malicious software should be examined, and reasons why this form of software is so effective in current times. \par
+In a paper by A. Kharraz (A look under the hoof of ransomware attacks) \cite{paper4}, the authors give an insight into how attacks take place, and how a range of different encryption algorithms are used by several of the most common ransomware. Ransomware belongs to a class of malware identified by the author as ‘scareware’, which takes advantage of a users’ fear of losing their private information or having their data exposed to others. \par
+In addition to the basic introduction of what the author introduces ransomware as, is the startling statistics on this kind of malware. In 2013, the author reported an increase of over 500\% (as shown in Figure 1.) on the amount of attacks compared to 2012. Because of this statistic, the author claims that ransomware is one of the most threatening viruses at the time the paper was published. In conducting research about the inner-workings of ransomware the author uses 1359 real-life reported cases of ransomware attacks in order to get consensus of how attacks are generally performed. \par
+[IMAGE OF INCREASE]
+\\
 They found most prominently:
 \begin{itemize}
 \item There are two main ransomware families (specific pieces of software which have developed over the years). Both with highlighted traits, these are:
 \begin{enumerate}
-\item TorrentLocker - A ransomware exlusivley distributed by email, and uses the infected user’s email address list to distribute further.
+\item TorrentLocker - A ransomware exclusively distributed by email, and uses the infected user’s email address list to distribute further.
 \item CryptoWall - Communicates back to the attackers using the Tor network, to remain anonymous.
 \end{enumerate}
 \item There are a further 97 variants, most of which are related. Some are direct copies however.
-\item 35.6\% of the attcks were made by ransomware that do not perform encryption, but simply delete users files if they do not pay the ransom.
+\item 35.6\% of the attacks were made by ransomware that do not perform encryption, but simply delete users files if they do not pay the ransom.
 \item CyrptoWall infected 250,000 computers worldwide in the year of publishing (2015).
 \end{itemize}
+Both of the described ransomware families above are particularly sophisticated according to the author’s findings, stating that they both use AES (Advanced Encryption Standard) to encrypt user data. This happens once a user is infected, and because of the high level of security AES was designed for (this method is used by the U.S. government to encrypt classified information for instance \cite{aes}), it makes any attempt at decrypting user data without paying extremely difficult. \par
+Although other ransomwares use less sophisticated locking mechanisms such as standard Windows functions as described in the paper, a common user would still not be able to unencrypt the data without the help of good decryption software or with guidance from professionals. The paper noted that it in fact most ransomwares were not concentrating on the strength of the encryption, as long as it took away the ability for users to access files, then they could begin holding such users at ransom. In a whitepaper published by Boromium Security \cite{bromium}, file type targeting is something that can increase the efficiency and speed at which more vital files are encrypted. By only encrypting recently modified, new and common file-type files (as shown in Figure 2.), a ransomware can cut its footprint and avoid anti-virus systems detecting major file system changes.
+[IMAGE OF FILE TYPE TARGETS]
+Although the paper mentioned earlier (A look under the hood) goes into great detail of how ransomware functions, and the statistics around them, the means at which users receive the malware is very brief in Kharraz’s paper. In order to understand how ransomware is transported, and how this relates to user responsibilities, other papers gave good insight. The Bromium whitepaper \cite{bromium}listed findings for most common ransomware attacks:
+\begin{itemize}
+\item Spam or social engineering
+\item Direct or indirect user download
+\item Malware installation tools and botnets
+\end{itemize}
+Where these means of infection relate to the topic of this paper is in the fact that all three contain some user involvement. Without the user clicking on a suspicious link, downloading faulty software, or installing software with unwanted additional add-ons, it could be claimed that malware would not exists or exist in a different manner, as told by K. Wyk \cite{artical}. Because ransomware realises heavily on user interaction, this is where this form of malware is required to look more professional than traditional viruses or spamming software. \par
+The Bromium report highlights the professionalism that is shown from some of the ransomware seen, and the increase is overall sophistication, making it more believable to be safe software of any kind. As mentioned in the abstract, emails produced to bring users to download the malware has been found to be increasing in sophistication too, with the use of correct user postcodes sent out. Because of this professionalism in the malware produced, software can almost seem to be on the side of the user when trapping them into a ransom. \par
+
 
 \subsection{Human errors- the consequences}
 
